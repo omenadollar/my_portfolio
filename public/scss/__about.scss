@@ -1,0 +1,185 @@
+@import "./_util";
+.about {
+    padding: 1rem;
+    margin: 0px 10px;
+    background-color: white;
+    .sec2-main {
+        grid-gap: 1rem;
+        padding: .5rem;
+        .sec2-left {
+            background-color: darken($whiteColor, $amount: 10);
+            padding: 1rem;
+            border-radius: 2rem;
+            h2 {
+                opacity: .4;
+                div {
+                    height: 2px;
+                    background-color: brown;
+                }
+                .one {
+                    width: 60px;
+                }
+                .two {
+                    margin-top: 2px;
+                    width: 30px;
+                }
+            }
+            .aboutcont {
+                grid-gap: 2rem;
+                margin-top: 1rem;
+                .grid {
+                    p,
+                    ul {
+                        background-color: rgba($color: white, $alpha: .8);
+                        padding: 1rem;
+                        border-radius: 1.5rem;
+                    }
+                }
+            }
+        }
+        .sec2-right {
+            background-color: darken($whiteColor, $amount: 10);
+            padding: 1rem;
+            border-radius: 2rem;
+            h2 {
+                opacity: .4;
+                div {
+                    height: 2px;
+                    background-color: brown;
+                }
+                .one {
+                    width: 60px;
+                }
+                .two {
+                    margin-top: 2px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+    .about-stats {
+        background-color: darken($whiteColor, $amount: 10);
+        padding: 2em;
+        margin-top: 20px;
+        border-radius: 2rem;
+        h2 {
+            opacity: .4;
+            div {
+                height: 2px;
+                background-color: brown;
+            }
+            .one {
+                width: 60px;
+            }
+            .two {
+                margin-top: 2px;
+                width: 30px;
+            }
+        }
+        .progress-bars {
+            @extend%grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.5rem;
+            margin-top: 2rem;
+            .progress-con {
+                background-color: rgba($color: white, $alpha: .8);
+                padding: 1rem;
+                border-radius: 1.5rem;
+                .prog-title {
+                    font-size: 1.6rem;
+                }
+                .progress-bar {
+                    .progress {
+                        width: 1005;
+                        height: .5rem;
+                        background-color: lighten($grayColor, $amount: 50);
+                        position: relative;
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            background-color: $secondaryColor;
+                            transition: $transition;
+                            width: 60%;
+                        }
+                        .html {
+                            width: 97%;
+                        }
+                        .html-1 {
+                            width: 90%;
+                        }
+                        .html-2 {
+                            width: 82%;
+                        }
+                        .html-3 {
+                            width: 69%;
+                        }
+                        .html-4 {
+                            width: 79%;
+                        }
+                        .html-5 {
+                            width: 82%;
+                        }
+                        .html-6 {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .achieve {
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        background-color: darken($whiteColor, $amount: 10);
+        h2 {
+            opacity: .4;
+            div {
+                height: 2px;
+                background-color: brown;
+            }
+            .one {
+                width: 60px;
+            }
+            .two {
+                margin-top: 2px;
+                width: 30px;
+            }
+        }
+        .about-item {
+            @extend%grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            font-size: 1.3rem;
+            margin-top: 3rem;
+            .abt-text {
+                background-color: rgba($color: white, $alpha: .8);
+                padding: 1rem;
+                border-radius: 1.5rem;
+                .large-txt {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: $secondaryColor;
+                }
+                .small-txt {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .timeline {
+        margin-top: 5rem;
+        box-shadow: 0px 5px 10px rgba($color: grey, $alpha: .4);
+        padding: 1.1rem;
+        &-item {
+            .t1-icon {
+                display: flex;
+            }
+            .copywright {
+                display: flex;
+            }
+        }
+    }
+}

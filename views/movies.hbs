@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body >
+<div class="movies">
+
+    <div class="moviescont">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">movies</li>
+            </ol>
+        </nav>
+
+        <form action="#" method="post" id="form">
+            <label for="list" id="list">Go to:</label>  
+            <input type="search" class="col form-control" id="search"      placeholder="search movies...">
+        </form>
+    </div>
+
+        
+    <div id="main">
+        {{#each movies}}
+        <a href="/movies/{{id}}">
+            <div class="movie">
+                <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}" alt="{{name}}">
+                <div class="movie-info">
+                    <h3>{{name}}</h3>
+                    <span class="span" onload="color({{vote_average}})">{{vote_average}}</span>
+                </div>
+                <div class="overview">
+                    <h3>overview</h3>
+                    {{overview}}
+                    <p     style="background-color:green;        padding:1rem;">{{first_air_date}}</p>
+                </div>
+            </div> 
+
+        </a>       
+        {{/each}}
+    </div>
+
+</div>
+
+
+</body>
+</html>

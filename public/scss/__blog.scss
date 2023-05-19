@@ -1,0 +1,132 @@
+@import "./_util";
+.blogs {
+    margin: 0px 10px;
+    //transform: translateY(70px);
+    box-sizing: border-box;
+    background-color: $whiteColor;
+    .sec4-header {
+        text-align: center;
+        margin: 0rem 1.3rem;
+        .blog-head {
+            padding: .5rem;
+            h2 {
+                .stats {
+                    transition: $transition;
+                    z-index: -1;
+                    transform: translate(-50%, -50%);
+                    font-size: 3rem;
+                    opacity: 0.2;
+                    color: black;
+                }
+            }
+        }
+    }
+    .main {
+        margin: 1.5rem 1.5rem;
+        h2 {
+            text-align: left;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            padding: .3rem;
+            box-shadow: $boxShadow;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        h5 {
+            font-size: 1.1rem;
+        }
+        .trendcont {
+            margin: 1.2rem 1.2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.2rem;
+            background-color: whitesmoke;
+            padding: 1.2rem;
+            margin-top: 2rem;
+        }
+        .news {
+            margin: 1.2rem 1.2rem;
+            .newscont {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 3rem;
+                padding: 1.3rem 1.3rem;
+                .nation {
+                    background-color: red;
+                }
+                .internation {
+                    padding: 1.2rem;
+                }
+                .sport {
+                    background-color: orange;
+                }
+                .crypto {
+                    background-color: gray;
+                }
+            }
+        }
+        .entertain {
+            margin: 1.2rem 1.2rem;
+            .body {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 3rem;
+                padding: 1.3rem 1.3rem;
+                .movies {
+                    .moviecont {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1.1rem;
+                        margin-top: 1.3rem;
+                    }
+                }
+                .music {
+                    .musicont {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1.1rem;
+                        margin-top: 1.3rem;
+                    }
+                }
+            }
+        }
+        .crypto {
+            margin: 1.2rem 1.2rem;
+        }
+    }
+    .trend {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+        border-radius: 30px;
+        width: fit-content;
+        padding: .5rem;
+        background-color: white;
+        &:hover {
+            transform: translate(3px, 3px);
+            box-shadow: $boxShadow;
+        }
+        .image {
+            width: 200px;
+            height: auto;
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: fill;
+            }
+        }
+        .trendhead {
+            text-align: left;
+            padding: 1rem;
+            height: fit-content;
+            // background-color: darken($primaryColor, $amount: 20);
+        }
+    }
+}

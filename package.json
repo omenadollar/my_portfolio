@@ -1,0 +1,23 @@
+{
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "ejs": "^3.1.8",
+        "express": "^4.18.1",
+        "express-async-errors": "^3.1.1",
+        "express-ejs-layouts": "^2.5.1",
+        "hbs": "^4.2.0",
+        "mongoose": "^6.4.2",
+        "node-themoviedb": "^0.2.8",
+        "nodemon": "^2.0.18"
+    },
+    "name": "my-portfolio",
+    "version": "1.0.0",
+    "main": "./server.js",
+    "scripts": {
+        "start": "nodemon server.js "
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

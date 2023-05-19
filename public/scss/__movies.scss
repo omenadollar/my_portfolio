@@ -1,0 +1,87 @@
+@import "./_util";
+* {
+    box-sizing: border-box;
+}
+
+.movies {
+    font-family: sans-serif;
+    .moviescont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            grid-column-gap: .5rem;
+            input {
+                background-color: transparent;
+                border: 1px solid black;
+                border-radius: 2rem;
+            }
+            #search::placeholder {
+                text-align: center;
+            }
+            #search:focus {
+                outline: none;
+            }
+        }
+    }
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        .movie {
+            width: 300px;
+            margin: 1rem;
+            background: linear-gradient(to bottom, green, black);
+            box-sizing: $boxShadow;
+            overflow: hidden;
+            border-radius: 3px;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .movie-info {
+                color: #eee;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.5rem 1rem 1rem;
+                letter-spacing: 2px;
+                .span {
+                    background-color: white;
+                    color: black;
+                    font-size: 1.2rem;
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    &.green {
+                        color: lightgreen;
+                    }
+                    &.orange {
+                        color: orange;
+                    }
+                    &.red {
+                        color: red;
+                    }
+                }
+            }
+            .overview {
+                color: #eee;
+                background: linear-gradient(to bottom, red, black);
+                padding: 2rem;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                max-height: 100%;
+                transform: translateY(101%);
+                transition: $transition;
+            }
+            &:hover .overview {
+                transform: translateY(0);
+            }
+        }
+    }
+}

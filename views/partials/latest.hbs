@@ -1,0 +1,27 @@
+<div class="container-fluid header section sec1">
+    <div class="row p-2 right">
+        <div class=" latestdivcon">
+          <h2>Latest</h2>
+          {{#each latestData}}
+            <div class=" latestdiv">     
+                <div class=" card-sm p-1 iatestcont">
+                    <a href="/trending/{{_id}}">
+                        <div class="row "> 
+                            <div class="row ">
+                             <img src="{{image}}" alt="" class="col img-fluid float-start" style="width:20vw;">
+                                <h5 class="col card-title">{{header}}</h5>
+                            </div>
+
+                            <p class="my-2 card-text">
+                                <span style="background-color:green;color:wheat;padding:.2rem;" class="my-2">{{category}}</span><br>{{date}}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div><hr style="height: 3px; background-color:green">
+            
+            {{/each}}
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+
+   <div class="container-fluid sec4 blogs ">
+        <div class="sec4-header ">
+            <div class="blog-head ">
+                <h2> <span class="stats ">News</span></h2>
+            </div>
+        </div>
+        <div class="main ">
+            <div class="trending">
+             <h2>trending</h2>
+             <div class="trendcont">
+                {{#each data}}
+                <a href="/trending/{{_id}}">
+                    <div class="trend"> 
+                        <div class="image">
+                        <img src="{{image}}" alt="">
+                        </div>
+                        <div class="trendhead">
+                          <h4>{{header}}</h4>
+                          <p>{{date}}</p>
+                        </div>
+                    </div>
+                </a>
+                {{/each}}
+             </div>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
